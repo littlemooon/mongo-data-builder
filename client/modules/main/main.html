@@ -1,0 +1,15 @@
+<div>
+  <div class="container">
+
+    <section class="row"> 
+      <ul class="nav nav-tabs" role="tablist">
+        <li ng-repeat="t in tabs" ng-class="{active:isActive('main'+t.route)}">
+          <a ui-sref={{t.route}}>{{t.name}}</a>
+        </li>
+      </ul>
+
+      <div class="panel" ui-view></div>
+
+    </section>
+  </div>
+</div>

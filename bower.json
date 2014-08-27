@@ -1,0 +1,11 @@
+{
+  "name": "angular-koa-mongo-seed",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-ui-router": "~0.2.10",
+    "angular-lodash": "~0.1.0",
+    "lodash": "~2.4.1"
+  }
+}

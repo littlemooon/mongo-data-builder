@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="app" >
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+
+  <title>Data Builder</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body ng-controller="AppCtrl">
+<div class="container">
+
+  <div ui-view></div>
+
+</div>
+  <script src="bower_components/lodash/dist/lodash.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="app.js"></script>
+  <script src="app-controller.js"></script>
+
+  <script src="modules/common/common.js"></script>
+  <script src="modules/common/common-directives.js"></script>
+
+  <script src="modules/main/main.js"></script>
+  <script src="modules/main/main-controller.js"></script>
+
+  <script src="modules/entry/entry.js"></script>
+  <script src="modules/entry/entry-controller.js"></script>
+  <script src="modules/entry/entry-service.js"></script>
+
+  <script src="modules/property/property.js"></script>
+  <script src="modules/property/property-controller.js"></script>
+  <script src="modules/property/property-service.js"></script>
+</body>
+
+</html>

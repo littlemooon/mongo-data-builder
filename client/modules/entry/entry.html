@@ -1,0 +1,18 @@
+<table class="table table-hover ">
+  <thead>
+    <tr>
+      <th ng-repeat="p in properties">{{p.name}}</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td ng-repeat="p in properties"><input type="text" ng-model="newEntry[p.name]" class="form-control input-sm"/></td>
+      <td><button type="button" class="btn btn-success glyphicon glyphicon-plus" ng-click="addEntry(newEntry)"></button></td>
+    </tr>
+    <tr ng-repeat="e in entries">
+      <td ng-repeat="p in properties"><input type="text" ng-model="e[p.name]" ng-blur="updateEntry(e)" class="form-control input-sm"/></td>
+      <td><button type="button" class="btn btn-danger glyphicon glyphicon-remove" ng-click="deleteEntry(e)"></button></td>
+    </tr>
+  </tbody>
+</table>
