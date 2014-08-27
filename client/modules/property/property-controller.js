@@ -50,7 +50,7 @@ angular.module('app.property').controller('PropertyCtrl', function($scope, Prope
   $scope.decreasePriority = function(property) {
     // move property within array
     var index = _.indexOf($scope.properties, property);
-    if (index > 0) {
+    if (index > $scope.properties.length-1) {
       $scope.properties.splice(index+1, 0, _.remove($scope.properties, property)[0]);
 
       // update property

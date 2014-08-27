@@ -54,8 +54,8 @@ function *updateProperty(id, property) {
   var oldProperty = yield getProperty(id);
 
   // get related properties
-  var nextProperty = yield getProperty(property.next);
-  var prevProperty = yield getProperty(property.prev);
+  var nextProperty = yield getProperty(ObjectID(property.next));
+  var prevProperty = yield getProperty(ObjectID(property.prev));
 
   // update property record
   var results = yield mongo.properties.update({_id: id}, property);
